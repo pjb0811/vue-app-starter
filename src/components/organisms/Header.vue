@@ -1,15 +1,22 @@
 <template>
-  <div class="hello">
+  <div>
     {{ name }}
+    <buttons/>
   </div>
 </template>
 
 <script>
-export default {
+import Buttons from '../molecules/Buttons'
+const Header = {
   data () {
-    return { name: 'test' }
+    return { name: 'header' }
+  },
+  components: {
+    Buttons
   }
 }
+
+export default Header
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
