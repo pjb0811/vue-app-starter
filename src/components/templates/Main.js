@@ -5,11 +5,15 @@ const MainTemplate = WrappedComponent => {
         name: 'main template'
       }
     },
+    methods: {
+      hello () {
+        alert('This is the message.')
+      }
+    },
     render (h) {
-      const { name } = MainTemplate(WrappedComponent).data()
       return (
         <div class="main-template">
-          <h1>{name}</h1>
+          <h1 on-click={this.hello}>{this.name}</h1>
           <div>
             <router-link to="/">
               <a>/main</a>

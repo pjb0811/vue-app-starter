@@ -15,6 +15,9 @@ const Main = {
         <Header />
       </div>
     )
+  },
+  metaInfo: {
+    title: 'Main'
   }
 }
 

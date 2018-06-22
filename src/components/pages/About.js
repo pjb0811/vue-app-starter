@@ -13,6 +13,9 @@ const About = {
         <h1>{name}</h1>
       </div>
     )
+  },
+  metaInfo: {
+    title: 'About'
   }
 }
 
